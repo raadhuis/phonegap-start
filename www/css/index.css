@@ -37,7 +37,7 @@ body {
     );
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
+    font-size:40px;
     height:100%;
     margin:0px;
     padding:0px;
@@ -48,29 +48,30 @@ body {
 /* Portrait layout (default) */
 .app {
     background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
+    display:block;           /* position in the center of the screen */
+    margin: 0 auto;
+                    /* text area width */
     text-align:center;
     padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+    
 }
 
 .button {
      border-radius:4px;
     -webkit-border-radius:4px;
     color:#FFFFFF;
-    font-size:12px;
-    margin:0px 30px;
-    padding:2px 0px;
+    font-size:30px;
+    width:80%;
+    margin: 0 auto;
+    padding:10px;
     cursor: pointer;
      background-color:#333333;
        
 }
 
+#snack {
+ font-size: 30px;   
+}
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
@@ -82,7 +83,7 @@ body {
 }
 
 h1 {
-    font-size:24px;
+    font-size:30px;
     font-weight:normal;
     margin:0px;
     overflow:visible;
